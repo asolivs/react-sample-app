@@ -124,10 +124,10 @@ function Registration(props) {
     <div className="login-form login-signin" style={{ display: "block" }}>
       <div className="text-center mb-10 mb-lg-20">
         <h3 className="font-size-h1">
-          <FormattedMessage id="AUTH.REGISTER.TITLE" />
+          <FormattedMessage id="Cadastre" />
         </h3>
         <p className="text-muted font-weight-bold">
-          Enter your details to create your account
+          Informe os dados da sua conta
         </p>
       </div>
 

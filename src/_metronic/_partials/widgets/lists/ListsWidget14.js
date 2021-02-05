@@ -108,9 +108,7 @@ export function ListsWidget14({ className }) {
               </span>
               <span className="text-muted font-weight-bold font-size-sm">
                 Created by:{" "}
-                <span className="text-primary font-weight-bold">
-                  KeenThemes
-                </span>
+                <span className="text-primary font-weight-bold">Asolivs</span>
               </span>
             </div>
             {/* end::Title */}

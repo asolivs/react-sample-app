@@ -83,7 +83,7 @@ function Login(props) {
             setSubmitting(false);
             setStatus(
               intl.formatMessage({
-                id: "AUTH.VALIDATION.INVALID_LOGIN",
+                id: "Dados invalidos",
               })
             );
           });
@@ -96,11 +96,9 @@ function Login(props) {
       {/* begin::Head */}
       <div className="text-center mb-10 mb-lg-20">
         <h3 className="font-size-h1">
-          <FormattedMessage id="AUTH.LOGIN.TITLE" />
+          <FormattedMessage id="LOGIN" />
         </h3>
-        <p className="text-muted font-weight-bold">
-          Enter your username and password
-        </p>
+        <p className="text-muted font-weight-bold">Informe usuario e senha</p>
       </div>
       {/* end::Head */}
 
@@ -116,8 +114,8 @@ function Login(props) {
         ) : (
           <div className="mb-10 alert alert-custom alert-light-info alert-dismissible">
             <div className="alert-text ">
-              Use account <strong>admin@demo.com</strong> and password{" "}
-              <strong>demo</strong> to continue.
+              Use account <strong>admin@dividas.com</strong> and password{" "}
+              <strong>12345789</strong> to continue.
             </div>
           </div>
         )}
@@ -154,21 +152,21 @@ function Login(props) {
             </div>
           ) : null}
         </div>
-        <div className="form-group d-flex flex-wrap justify-content-between align-items-center">
-          <Link
+        <div className="form-group d-flex flex-wrap justify-content-center align-items-center">
+          {/* <Link
             to="/auth/forgot-password"
             className="text-dark-50 text-hover-primary my-3 mr-2"
             id="kt_login_forgot"
           >
             <FormattedMessage id="AUTH.GENERAL.FORGOT_BUTTON" />
-          </Link>
+          </Link> */}
           <button
             id="kt_login_signin_submit"
             type="submit"
             disabled={formik.isSubmitting}
             className={`btn btn-primary font-weight-bold px-9 py-4 my-3`}
           >
-            <span>Sign In</span>
+            <span>Login</span>
             {loading && <span className="ml-3 spinner spinner-white"></span>}
           </button>
         </div>
